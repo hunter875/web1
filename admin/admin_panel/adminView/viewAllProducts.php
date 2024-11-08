@@ -25,8 +25,7 @@
       <td><img height='100px' src='<?=$row["product_image"]?>'></td>
       <td><?=$row["product_name"]?></td>
       <td><?=$row["product_desc"]?></td>      
-      <td><?=$row["category_name"]?></td> 
-    
+      <td><?=$row["category_name"]?></td>   
       <td><button class="btn btn-primary" style="height:40px" onclick="itemEditForm('<?=$row['product_id']?>')">Edit</button></td>
       <td><button class="btn btn-danger" style="height:40px" onclick="itemDelete('<?=$row['product_id']?>')">Delete</button></td>
       </tr>
@@ -58,7 +57,10 @@
               <label for="name">Product Name:</label>
               <input type="text" class="form-control" id="p_name" required>
             </div>
-    
+            <div class="form-group">
+              <label for="price">Price:</label>
+              <input type="number" class="form-control" id="p_price" required>
+            </div>
             <div class="form-group">
               <label for="qty">Description:</label>
               <input type="text" class="form-control" id="p_desc" required>

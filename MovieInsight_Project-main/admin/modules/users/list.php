@@ -79,4 +79,4 @@ $smg_type = getFlashData('smg_type');
 
 <?php
 layouts('footer');  
-?>
+?>  
