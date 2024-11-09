@@ -6,10 +6,7 @@
        
         $ProductName = $_POST['p_name'];
         $desc= $_POST['p_desc'];
-        $price = $_POST['p_price'];
         $category = $_POST['category'];
-       
-            
         $name = $_FILES['file']['name'];
         $temp = $_FILES['file']['tmp_name'];
     
@@ -23,7 +20,7 @@
 
          $insert = mysqli_query($conn,"INSERT INTO product
          (product_name,product_image,product_desc,category_id) 
-         VALUES ('$ProductName','$image,'$desc','$category')");
+         VALUES ('$ProductName','$image','$desc','$category')");
  
          if(!$insert)
          {

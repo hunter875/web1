@@ -24,10 +24,6 @@
       <input type="text" class="form-control" id="p_desc" value="<?=$row1['product_desc']?>">
     </div>
     <div class="form-group">
-      <label for="price">rating</label>
-      <input type="number" class="form-control" id="p_price" value="<?=$row1['price']?>">
-    </div>
-    <div class="form-group">
       <label>Category:</label>
       <select id="category">
         <?php
